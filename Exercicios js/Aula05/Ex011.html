@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="Pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nacionalidade</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>Controle de Brasileiros </h1>
+    Digite seu país de origem : <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="calcular()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular(){
+        var txtn = window.document.querySelector('input#txtnac')
+        var res = window.document.querySelector('div#res')
+        var país = (txtn.value)
+        
+        if (país == 'Brasil') {
+            res.innerHTML = `<p>Você é brasileiro</p>`
+        } else {
+            res.innerHTML = `<p>Você é estrangeiro</p>`
+            }
+            res.innerHTML += `<p>Isso porque você nasceu em ${país}</p>`
+        }
+    </script>     
+</body>
+</html>
