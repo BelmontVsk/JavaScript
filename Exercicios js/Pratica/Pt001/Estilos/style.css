@@ -4,8 +4,9 @@
     padding: 0px;
 }
 body{
-    background-color:rgb(95, 95, 233);
+    background-color:#677d9f;
     font: normal 15pt arial;
+    height: 100vh;
 }
 header{
     padding: 5px;
@@ -15,14 +16,22 @@ header{
 
 }
 section{
-    background: white;
+    background-color: white;
     border-radius: 15px;
     padding: 20px;
-    width: 500px;
+    width: 370px;
+    height: 370px;
     margin: auto;
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.445);
-
+    
 }
+div{
+    text-align: center;
+    padding: 5px;
+    
+}
+
+   
 
 footer{
     padding: 5px;
